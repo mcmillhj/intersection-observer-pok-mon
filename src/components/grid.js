@@ -5,7 +5,7 @@ import pokemon from "pokemon";
 
 const Grid = () => (
   <div className="grid">
-    {pokemon.map(({ name, imageUrl }, index) => {
+    {pokemon.slice(0, 350).map(({ name, imageUrl }, index) => {
       const className = [
         "grid-item",
         index % 3 === 0 && "grid-span-3",
